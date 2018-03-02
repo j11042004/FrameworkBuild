@@ -14,10 +14,10 @@
 #import "define.h"
 
 #define cellID @"Cell"
-@interface XibViewController()
+@interface XibViewController()<UITableViewDataSource,UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *backView;
-//@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @property (nonatomic,strong) HelloView * helloView;
@@ -46,12 +46,12 @@
     
     
     
-//    self.tableView.delegate = self;
-//    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
     
     // 使用 Bundle 管理 Xib
-//    UINib * cusCellNib = [UINib nibWithNibName:@"CusTableViewCell" bundle:bundle];
-//    [self.tableView registerNib:cusCellNib forCellReuseIdentifier:cellID];
+    UINib * cusCellNib = [UINib nibWithNibName:@"CusTableViewCell" bundle:bundle];
+    [self.tableView registerNib:cusCellNib forCellReuseIdentifier:cellID];
 }
 -(void)viewWillLayoutSubviews{
     _helloView.frame = CGRectMake(0, 0, _backView.frame.size.width, _backView.frame.size.height);
@@ -66,7 +66,6 @@
     // 使用 Bundle 管理 Xib，判斷 path 是 nil 還是 不是nil 決定要 mainBundle 還是 self bundle
     NSBundle * bundle = BundleSelf;
     XibViewController * xibVC = [[XibViewController alloc] initWithNibName:@"XibViewController" bundle:bundle];
-//    XibViewController * xibVC = [[XibViewController alloc] initWithNibName:@"XibViewController" bundle:nil];
     
     UIViewController * topVC = [TopViewControllerManager topViewController];
     if (topVC.navigationController != nil) {
@@ -78,27 +77,27 @@
 #pragma mark - private Function
 
 #pragma mark - Table View Delegate DataSource，現無法解決如何製成 Framework
-//-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-//    return 1;
-//}
-//-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-//    return 20;
-//}
-//-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-//
-//    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
-//    NSString * text = [NSString stringWithFormat:@"第%ld列",(long)indexPath.row];
-//    CusTableViewCell * cusCell = (CusTableViewCell*)cell;
-//    if (cusCell == nil) {
-//        NSLog(@"cusCell is nil");
-//        cell.textLabel.text = text;
-//        return cell;
-//    }
-//    NSLog(@"cusCell is not nil");
-////    cusCell.showLabel.text = text;
-//    cusCell.backgroundColor = [UIColor purpleColor];
-//    return cusCell;
-//}
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 20;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
+    NSString * text = [NSString stringWithFormat:@"第%ld列",(long)indexPath.row];
+    CusTableViewCell * cusCell = (CusTableViewCell*)cell;
+    if (cusCell == nil) {
+        NSLog(@"cusCell is nil");
+        cell.textLabel.text = text;
+        return cell;
+    }
+    NSLog(@"cusCell is not nil");
+//    cusCell.showLabel.text = text;
+    cusCell.backgroundColor = [UIColor purpleColor];
+    return cusCell;
+}
 
 #pragma mark : Touch Delegate
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{

@@ -16,6 +16,7 @@
             <connections>
                 <outlet property="backView" destination="7Uv-ZA-dea" id="hh8-oW-wGx"/>
                 <outlet property="imageView" destination="07j-pN-vGM" id="b4D-fX-hIo"/>
+                <outlet property="tableView" destination="kuI-yW-inj" id="ttO-td-s9v"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -34,6 +35,10 @@
                         <constraint firstAttribute="width" secondItem="07j-pN-vGM" secondAttribute="height" multiplier="2:1" id="nAR-lz-IfU"/>
                     </constraints>
                 </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kuI-yW-inj">
+                    <rect key="frame" x="10" y="30" width="355" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -41,8 +46,12 @@
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="7Uv-ZA-dea" secondAttribute="bottom" id="93N-xS-fcd"/>
                 <constraint firstItem="7Uv-ZA-dea" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="GLK-AS-pX4"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="07j-pN-vGM" secondAttribute="trailing" id="GTO-NE-NyM"/>
+                <constraint firstItem="kuI-yW-inj" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="P1Z-BE-oZY"/>
+                <constraint firstItem="07j-pN-vGM" firstAttribute="top" secondItem="kuI-yW-inj" secondAttribute="bottom" constant="10" id="Sna-EG-SS0"/>
+                <constraint firstItem="kuI-yW-inj" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="T0t-Mc-SAS"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="7Uv-ZA-dea" secondAttribute="trailing" id="WI3-iM-cQ6"/>
                 <constraint firstItem="07j-pN-vGM" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Wp6-ZG-ZiZ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="kuI-yW-inj" secondAttribute="trailing" constant="10" id="Wwn-lU-ERP"/>
                 <constraint firstItem="7Uv-ZA-dea" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1/3" id="m91-zZ-BGD"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>

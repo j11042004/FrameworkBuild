@@ -7,19 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		041E07122048EE4000760FBF /* XibFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041E07102048EE4000760FBF /* XibFrameWork.framework */; };
-		041E07132048EE4000760FBF /* XibBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 041E07112048EE4000760FBF /* XibBundle.bundle */; };
 		047C4DFE20314CB500E0846A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C4DFD20314CB500E0846A /* AppDelegate.m */; };
 		047C4E0120314CB500E0846A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C4E0020314CB500E0846A /* ViewController.m */; };
 		047C4E0420314CB500E0846A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047C4E0220314CB500E0846A /* Main.storyboard */; };
 		047C4E0620314CB500E0846A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047C4E0520314CB500E0846A /* Assets.xcassets */; };
 		047C4E0920314CB500E0846A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047C4E0720314CB500E0846A /* LaunchScreen.storyboard */; };
 		047C4E0C20314CB500E0846A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C4E0B20314CB500E0846A /* main.m */; };
+		04FB8EC320495B4600F270A8 /* XibFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FB8EC120495B4500F270A8 /* XibFrameWork.framework */; };
+		04FB8EC420495B4600F270A8 /* XibBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04FB8EC220495B4500F270A8 /* XibBundle.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		041E07102048EE4000760FBF /* XibFrameWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XibFrameWork.framework; sourceTree = "<group>"; };
-		041E07112048EE4000760FBF /* XibBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XibBundle.bundle; sourceTree = "<group>"; };
 		047C4DF920314CB500E0846A /* FrameworkShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameworkShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		047C4DFC20314CB500E0846A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		047C4DFD20314CB500E0846A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -30,6 +28,8 @@
 		047C4E0820314CB500E0846A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		047C4E0A20314CB500E0846A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		047C4E0B20314CB500E0846A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04FB8EC120495B4500F270A8 /* XibFrameWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XibFrameWork.framework; sourceTree = "<group>"; };
+		04FB8EC220495B4500F270A8 /* XibBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XibBundle.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041E07122048EE4000760FBF /* XibFrameWork.framework in Frameworks */,
+				04FB8EC320495B4600F270A8 /* XibFrameWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,8 +72,8 @@
 				047C4E0720314CB500E0846A /* LaunchScreen.storyboard */,
 				047C4E0A20314CB500E0846A /* Info.plist */,
 				047C4E0B20314CB500E0846A /* main.m */,
-				041E07112048EE4000760FBF /* XibBundle.bundle */,
-				041E07102048EE4000760FBF /* XibFrameWork.framework */,
+				04FB8EC220495B4500F270A8 /* XibBundle.bundle */,
+				04FB8EC120495B4500F270A8 /* XibFrameWork.framework */,
 			);
 			path = FrameworkShow;
 			sourceTree = "<group>";
@@ -137,7 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				047C4E0920314CB500E0846A /* LaunchScreen.storyboard in Resources */,
-				041E07132048EE4000760FBF /* XibBundle.bundle in Resources */,
+				04FB8EC420495B4600F270A8 /* XibBundle.bundle in Resources */,
 				047C4E0620314CB500E0846A /* Assets.xcassets in Resources */,
 				047C4E0420314CB500E0846A /* Main.storyboard in Resources */,
 			);

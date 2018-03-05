@@ -8,16 +8,17 @@
 
 #import "CusTableViewCell.h"
 #import "define.h"
+@interface CusTableViewCell()
 
+@end
 @implementation CusTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    NSLog(@"Cell awake");
 }
 - (IBAction)addText:(UIButton *)sender {
-//    NSString * text = self.showLabel.text;
-//    self.showLabel.text = [NSString stringWithFormat:@"%@ hello",text];
+    NSString * text = self.showLabel.text;
+    self.showLabel.text = [NSString stringWithFormat:@"%@ hello",text];
     NSLog(@"Hello");
 }
 

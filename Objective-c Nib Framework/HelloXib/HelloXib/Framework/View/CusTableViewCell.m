@@ -4,7 +4,7 @@
 //
 //  Created by Uran on 2018/2/12.
 //  Copyright © 2018年 Uran. All rights reserved.
-//
+//  Xib 上拉取 IBOutlet 與 IBAction 不能與 File's Owner 做連結
 
 #import "CusTableViewCell.h"
 #import "define.h"

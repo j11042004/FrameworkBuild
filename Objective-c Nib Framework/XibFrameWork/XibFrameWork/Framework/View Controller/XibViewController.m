@@ -14,6 +14,7 @@
 #import "define.h"
 
 #define cellID @"Cell"
+#define CusCellID @"CusTableViewCell"
 @interface XibViewController()<UITableViewDataSource,UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *backView;
@@ -23,6 +24,7 @@
 @property (nonatomic,strong) HelloView * helloView;
 @property (nonatomic,strong) UIViewController * topVC;
 @property (nonatomic,strong) TopViewControllerManager * topVCManager;
+@property (nonatomic,strong) NSBundle * bundle;
 @end
 
 @implementation XibViewController
@@ -39,19 +41,16 @@
     _topVCManager = [TopViewControllerManager sharedInstance];
     
     // 取得 Bundle
-    NSBundle * bundle = BundleSelf;
+    self.bundle = BundleSelf;
     // 從 bundle 中找出 image
-    UIImage *img = [UIImage imageNamed:@"jobs.png" inBundle:bundle compatibleWithTraitCollection:nil];
+    UIImage *img = [UIImage imageNamed:@"jobs.png" inBundle:_bundle compatibleWithTraitCollection:nil];
     self.imageView.image = img;
-    
     
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    
-    // 使用 Bundle 管理 Xib
-    UINib * cusCellNib = [UINib nibWithNibName:@"CusTableViewCell" bundle:bundle];
-    [self.tableView registerNib:cusCellNib forCellReuseIdentifier:cellID];
+    UINib * nib = [UINib nibWithNibName:@"CusTableViewCell" bundle:_bundle];
+    [_tableView registerNib:nib forCellReuseIdentifier:CusCellID];
 }
 -(void)viewWillLayoutSubviews{
     _helloView.frame = CGRectMake(0, 0, _backView.frame.size.width, _backView.frame.size.height);
@@ -84,19 +83,30 @@
     return 20;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
-    NSString * text = [NSString stringWithFormat:@"第%ld列",(long)indexPath.row];
-    CusTableViewCell * cusCell = (CusTableViewCell*)cell;
-    if (cusCell == nil) {
-        NSLog(@"cusCell is nil");
-        cell.textLabel.text = text;
+    CusTableViewCell *cell = (CusTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CusCellID];
+    if (cell) {
+        cell.showLabel.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
         return cell;
+    }else{
+        NSLog(@"cell is nil");
+        UINib * cusCellNib = [UINib nibWithNibName:@"CusTableViewCell" bundle:[NSBundle mainBundle]];
+        [self.tableView registerNib:cusCellNib forCellReuseIdentifier:CusCellID];
+        NSArray *nibContents;
+        CusTableViewCell * cusCell;
+        nibContents = [[NSBundle mainBundle]
+                       loadNibNamed:@"CusTableViewCell" owner:self options:nil];
+        NSEnumerator *nibEnumerator = [nibContents objectEnumerator];
+        NSObject *nibItem = nil;
+        while ((nibItem = [nibEnumerator nextObject]) != nil) {
+            if ([nibItem isKindOfClass:[CusTableViewCell class]]) {
+                cusCell = (CusTableViewCell *)nibItem;
+                cusCell.showLabel.text = [NSString stringWithFormat:@"Jobs : %ld",(long)indexPath.row];
+                return cusCell;
+            }
+        }
     }
-    NSLog(@"cusCell is not nil");
-//    cusCell.showLabel.text = text;
-    cusCell.backgroundColor = [UIColor purpleColor];
-    return cusCell;
+    
+    return cell;
 }
 
 #pragma mark : Touch Delegate

@@ -10,11 +10,11 @@ import UIKit
 
 class CusTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var secondLabel: UILabel!
     @IBOutlet weak var firstLabel: UILabel!
+    @IBOutlet weak var secondLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        NSLog("awakeFromNib")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

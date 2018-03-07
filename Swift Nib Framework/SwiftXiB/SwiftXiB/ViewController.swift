@@ -34,8 +34,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CusTableViewCell
-        cell.firstLabel.text = "First :\(indexPath.row)"
-        cell.secondLabel.text = "Second :\(indexPath.row)"
+        cell.firstLabel.text = "First : \(indexPath.row)"
+        cell.secondLabel.text = "Second : \(indexPath.row)"
         return cell
     }
 }

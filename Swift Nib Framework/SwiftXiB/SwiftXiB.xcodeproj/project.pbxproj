@@ -68,11 +68,11 @@
 			children = (
 				047C4D5E20312C0600E0846A /* AppDelegate.swift */,
 				047C4D6020312C0600E0846A /* ViewController.swift */,
+				047C4D6220312C0600E0846A /* Main.storyboard */,
 				047C4D7020312C1800E0846A /* XibViewController.swift */,
 				047C4D7120312C1800E0846A /* XibViewController.xib */,
 				04F0E3C22045116C0070F1D0 /* CusTableViewCell.swift */,
 				04F0E3C32045116C0070F1D0 /* CusTableViewCell.xib */,
-				047C4D6220312C0600E0846A /* Main.storyboard */,
 				047C4D7420312CFC00E0846A /* HelloView.swift */,
 				047C4D7620312D0F00E0846A /* HelloView.xib */,
 				047C4D6520312C0600E0846A /* Assets.xcassets */,

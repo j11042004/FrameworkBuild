@@ -12,8 +12,24 @@
 		049B86D4204F98CB00083F2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049B86D2204F98CB00083F2B /* Main.storyboard */; };
 		049B86D6204F98CB00083F2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049B86D5204F98CB00083F2B /* Assets.xcassets */; };
 		049B86D9204F98CB00083F2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049B86D7204F98CB00083F2B /* LaunchScreen.storyboard */; };
-		049B86FA204FA35700083F2B /* SwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049B86F9204FA35700083F2B /* SwiftFramework.framework */; };
+		04DEED82204FD3500047BEA3 /* SwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DEED81204FD3500047BEA3 /* SwiftFramework.framework */; };
+		04E9F0EE204FD45C00D09AC3 /* SwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DEED81204FD3500047BEA3 /* SwiftFramework.framework */; };
+		04E9F0EF204FD45C00D09AC3 /* SwiftFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04DEED81204FD3500047BEA3 /* SwiftFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04DEED68204FBC280047BEA3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04E9F0EF204FD45C00D09AC3 /* SwiftFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		049B86CB204F98CB00083F2B /* SwiftFrameworkShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftFrameworkShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,7 +39,7 @@
 		049B86D5204F98CB00083F2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		049B86D8204F98CB00083F2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		049B86DA204F98CB00083F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		049B86F9204FA35700083F2B /* SwiftFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftFramework.framework; sourceTree = "<group>"; };
+		04DEED81204FD3500047BEA3 /* SwiftFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftFramework.framework; path = ../../SwiftFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049B86FA204FA35700083F2B /* SwiftFramework.framework in Frameworks */,
+				04DEED82204FD3500047BEA3 /* SwiftFramework.framework in Frameworks */,
+				04E9F0EE204FD45C00D09AC3 /* SwiftFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +80,7 @@
 				049B86D5204F98CB00083F2B /* Assets.xcassets */,
 				049B86D7204F98CB00083F2B /* LaunchScreen.storyboard */,
 				049B86DA204F98CB00083F2B /* Info.plist */,
-				049B86F9204FA35700083F2B /* SwiftFramework.framework */,
+				04DEED81204FD3500047BEA3 /* SwiftFramework.framework */,
 			);
 			path = SwiftFrameworkShow;
 			sourceTree = "<group>";
@@ -78,6 +95,7 @@
 				049B86C7204F98CB00083F2B /* Sources */,
 				049B86C8204F98CB00083F2B /* Frameworks */,
 				049B86C9204F98CB00083F2B /* Resources */,
+				04DEED68204FBC280047BEA3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -285,6 +303,7 @@
 					"$(PROJECT_DIR)/SwiftFrameworkShow",
 				);
 				INFOPLIST_FILE = SwiftFrameworkShow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uran.SwiftFrameworkShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +323,7 @@
 					"$(PROJECT_DIR)/SwiftFrameworkShow",
 				);
 				INFOPLIST_FILE = SwiftFrameworkShow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uran.SwiftFrameworkShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";

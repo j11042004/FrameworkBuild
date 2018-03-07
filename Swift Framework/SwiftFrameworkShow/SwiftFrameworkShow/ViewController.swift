@@ -8,11 +8,13 @@
 
 import UIKit
 import SwiftFramework
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let deviceName = UIDevice.current.name
+        NSLog("deviceName : \(deviceName)")
     }
     
     override func didReceiveMemoryWarning() {

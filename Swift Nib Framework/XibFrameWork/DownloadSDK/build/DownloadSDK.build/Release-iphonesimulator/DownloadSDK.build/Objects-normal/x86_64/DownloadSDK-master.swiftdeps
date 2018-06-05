@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "ce5b748034f4024d1973747a94d70ae4"
+build_time: [1528171237, 219831000]
+inputs:
+  "/Users/mac/Desktop/App\u6E2C\u8A66/HelloFramework/Swift Nib Framework/XibFrameWork/DownloadSDK/DownloadSDK/DownloadView.swift": [9223372036, 854775807]

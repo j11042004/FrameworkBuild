@@ -47,6 +47,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046250D520C4D97700EE961D /* UiView */ = {
+			isa = PBXGroup;
+			children = (
+				04F0E3C22045116C0070F1D0 /* CusTableViewCell.swift */,
+				04F0E3C32045116C0070F1D0 /* CusTableViewCell.xib */,
+				047C4D7420312CFC00E0846A /* HelloView.swift */,
+				047C4D7620312D0F00E0846A /* HelloView.xib */,
+			);
+			path = UiView;
+			sourceTree = "<group>";
+		};
 		047C4D5220312C0600E0846A = {
 			isa = PBXGroup;
 			children = (
@@ -71,10 +82,7 @@
 				047C4D6220312C0600E0846A /* Main.storyboard */,
 				047C4D7020312C1800E0846A /* XibViewController.swift */,
 				047C4D7120312C1800E0846A /* XibViewController.xib */,
-				04F0E3C22045116C0070F1D0 /* CusTableViewCell.swift */,
-				04F0E3C32045116C0070F1D0 /* CusTableViewCell.xib */,
-				047C4D7420312CFC00E0846A /* HelloView.swift */,
-				047C4D7620312D0F00E0846A /* HelloView.xib */,
+				046250D520C4D97700EE961D /* UiView */,
 				047C4D6520312C0600E0846A /* Assets.xcassets */,
 				047C4D6720312C0600E0846A /* LaunchScreen.storyboard */,
 				047C4D6A20312C0600E0846A /* Info.plist */,

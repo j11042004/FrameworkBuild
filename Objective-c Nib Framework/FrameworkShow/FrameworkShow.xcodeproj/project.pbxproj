@@ -13,9 +13,31 @@
 		047C4E0620314CB500E0846A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047C4E0520314CB500E0846A /* Assets.xcassets */; };
 		047C4E0920314CB500E0846A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047C4E0720314CB500E0846A /* LaunchScreen.storyboard */; };
 		047C4E0C20314CB500E0846A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C4E0B20314CB500E0846A /* main.m */; };
-		04FB8EFD204CFAA700F270A8 /* XibFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FB8EFB204CFAA700F270A8 /* XibFrameWork.framework */; };
-		04FB8EFE204CFAA700F270A8 /* XibBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04FB8EFC204CFAA700F270A8 /* XibBundle.bundle */; };
+		04DE5E77208601E10062D036 /* XIBOutBundle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DE5E76208601E10062D036 /* XIBOutBundle.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		046447622085FB2600E1FEFD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046447702085FE3000E1FEFD /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		047C4DF920314CB500E0846A /* FrameworkShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameworkShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,8 +50,7 @@
 		047C4E0820314CB500E0846A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		047C4E0A20314CB500E0846A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		047C4E0B20314CB500E0846A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		04FB8EFB204CFAA700F270A8 /* XibFrameWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XibFrameWork.framework; sourceTree = "<group>"; };
-		04FB8EFC204CFAA700F270A8 /* XibBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XibBundle.bundle; sourceTree = "<group>"; };
+		04DE5E76208601E10062D036 /* XIBOutBundle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XIBOutBundle.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04FB8EFD204CFAA700F270A8 /* XibFrameWork.framework in Frameworks */,
+				04DE5E77208601E10062D036 /* XIBOutBundle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,11 +89,10 @@
 				047C4DFF20314CB500E0846A /* ViewController.h */,
 				047C4E0020314CB500E0846A /* ViewController.m */,
 				047C4E0220314CB500E0846A /* Main.storyboard */,
+				04DE5E76208601E10062D036 /* XIBOutBundle.framework */,
 				047C4E0520314CB500E0846A /* Assets.xcassets */,
 				047C4E0720314CB500E0846A /* LaunchScreen.storyboard */,
 				047C4E0A20314CB500E0846A /* Info.plist */,
-				04FB8EFC204CFAA700F270A8 /* XibBundle.bundle */,
-				04FB8EFB204CFAA700F270A8 /* XibFrameWork.framework */,
 				047C4E0B20314CB500E0846A /* main.m */,
 			);
 			path = FrameworkShow;
@@ -88,6 +108,8 @@
 				047C4DF520314CB500E0846A /* Sources */,
 				047C4DF620314CB500E0846A /* Frameworks */,
 				047C4DF720314CB500E0846A /* Resources */,
+				046447622085FB2600E1FEFD /* Embed Frameworks */,
+				046447702085FE3000E1FEFD /* Embed PlugIns */,
 			);
 			buildRules = (
 			);
@@ -104,7 +126,7 @@
 		047C4DF120314CB500E0846A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Uran;
 				TargetAttributes = {
 					047C4DF820314CB500E0846A = {
@@ -137,7 +159,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				047C4E0920314CB500E0846A /* LaunchScreen.storyboard in Resources */,
-				04FB8EFE204CFAA700F270A8 /* XibBundle.bundle in Resources */,
 				047C4E0620314CB500E0846A /* Assets.xcassets in Resources */,
 				047C4E0420314CB500E0846A /* Main.storyboard in Resources */,
 			);
@@ -192,6 +213,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -199,6 +221,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -229,7 +252,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -248,6 +271,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -255,6 +279,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -278,7 +303,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -296,6 +321,7 @@
 				);
 				INFOPLIST_FILE = FrameworkShow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uran.FrameworkShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -314,6 +340,7 @@
 				);
 				INFOPLIST_FILE = FrameworkShow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uran.FrameworkShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

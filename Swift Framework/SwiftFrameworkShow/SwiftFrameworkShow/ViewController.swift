@@ -8,7 +8,6 @@
 
 import UIKit
 import SwiftFramework
-
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -17,16 +16,17 @@ class ViewController: UIViewController {
         NSLog("deviceName : \(deviceName)")
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
+    @IBAction func show(_ sender: UIButton) {
         SwiftFramework.shared.hello()
         let swiftHello = SwiftHello.shared.sayHello()
         NSLog("Swift Hello : \(swiftHello)")
     }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
 
 }
 

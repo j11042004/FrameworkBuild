@@ -1,0 +1,6 @@
+framework module XIBOutBundle {
+  umbrella header "XIBOutBundle.h"
+
+  export *
+  module * { export * }
+}

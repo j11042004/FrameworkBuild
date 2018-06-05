@@ -3,11 +3,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': '/Users/mac/Library/Developer/Xcode/DerivedData/SwiftFramework-dptwolfinlefsagsdrflpdqolzdl/Build/Products/Debug-iphonesimulator/SwiftFramework.framework/Modules'
+    'name': '/Users/mac/Library/Developer/Xcode/DerivedData/SwiftFramework-bdzrfytnjeconudoewuqnreqojmw/Build/Products/Debug-iphonesimulator/SwiftFramework.framework/Modules'
     'contents': [{
       'type': 'file',
       'name': 'module.modulemap',
-      'external-contents': '/Users/mac/Desktop/App測試/FrameworkTest/Swift Framework/SwiftFramework/build/SwiftFramework.build/Debug-iphonesimulator/SwiftFramework.build/unextended-module.modulemap',
+      'external-contents': '/Users/mac/Desktop/App測試/HelloFramework/Swift Framework/SwiftFramework/build/SwiftFramework.build/Debug-iphonesimulator/SwiftFramework.build/unextended-module.modulemap',
     }]
   }]
 }

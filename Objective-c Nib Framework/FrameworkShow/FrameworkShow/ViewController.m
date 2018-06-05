@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-#import <XibFrameWork/XibFrameWork.h>
+//#import <XibFrameWork/XibFrameWork.h>
+#import <XIBOutBundle/XIBOutBundle.h>
 @interface ViewController ()
 
 @end
@@ -26,12 +27,14 @@
 
 }
 - (IBAction)show:(id)sender {
-//    [XibViewController showXibViewController];
+    [XibViewController showXibViewController];
     
-    NSString * path = [[NSBundle mainBundle] pathForResource:@"XibBundle" ofType:@"bundle"];
-    NSBundle * bundle = [NSBundle bundleWithPath:path];
-    XibViewController * xbc = [[XibViewController alloc] initWithNibName:@"XibViewController" bundle:bundle];
-    [self presentViewController:xbc animated:YES completion:nil];
+//    NSString * path = [[NSBundle mainBundle] pathForResource:@"XibBundle" ofType:@"bundle"];
+//    NSBundle * bundle = [NSBundle bundleWithPath:path];
+//    XibViewController * xbc = [[XibViewController alloc] initWithNibName:@"XibViewController" bundle:bundle];
+//    [self presentViewController:xbc animated:YES completion:nil];
+    
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -4,28 +4,28 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/mac/Library/Developer/Xcode/DerivedData/SwiftFramework-dptwolfinlefsagsdrflpdqolzdl/Build/Products/Debug-iphonesimulator/SwiftFramework.framework/Headers",
+      'name': "/Users/mac/Library/Developer/Xcode/DerivedData/SwiftFramework-bdzrfytnjeconudoewuqnreqojmw/Build/Products/Debug-iphonesimulator/SwiftFramework.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "SwiftFramework-Swift.h",
-          'external-contents': "/Users/mac/Library/Developer/Xcode/DerivedData/SwiftFramework-dptwolfinlefsagsdrflpdqolzdl/Build/Products/Debug-iphonesimulator/SwiftFramework.framework/Headers/SwiftFramework-Swift.h"
+          'external-contents': "/Users/mac/Library/Developer/Xcode/DerivedData/SwiftFramework-bdzrfytnjeconudoewuqnreqojmw/Build/Products/Debug-iphonesimulator/SwiftFramework.framework/Headers/SwiftFramework-Swift.h"
         },
         {
           'type': 'file',
           'name': "SwiftFramework.h",
-          'external-contents': "/Users/mac/Desktop/App\u6E2C\u8A66/FrameworkTest/Swift Framework/SwiftFramework/SwiftFramework/SwiftFramework.h"
+          'external-contents': "/Users/mac/Desktop/App\u6E2C\u8A66/HelloFramework/Swift Framework/SwiftFramework/SwiftFramework/SwiftFramework.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/mac/Library/Developer/Xcode/DerivedData/SwiftFramework-dptwolfinlefsagsdrflpdqolzdl/Build/Products/Debug-iphonesimulator/SwiftFramework.framework/Modules",
+      'name': "/Users/mac/Library/Developer/Xcode/DerivedData/SwiftFramework-bdzrfytnjeconudoewuqnreqojmw/Build/Products/Debug-iphonesimulator/SwiftFramework.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/mac/Desktop/App\u6E2C\u8A66/FrameworkTest/Swift Framework/SwiftFramework/build/SwiftFramework.build/Debug-iphonesimulator/SwiftFramework.build/module.modulemap"
+          'external-contents': "/Users/mac/Desktop/App\u6E2C\u8A66/HelloFramework/Swift Framework/SwiftFramework/build/SwiftFramework.build/Debug-iphonesimulator/SwiftFramework.build/module.modulemap"
         }
       ]
     }
